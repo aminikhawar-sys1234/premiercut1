@@ -34,7 +34,7 @@ object AudioEngineTestRunner {
             }
 
             val res = ctl.submit(cmd)
-            check(res is com.ahstudio.audio.master.AudioEngineResult.Success)
+            check(res is com.ahstudio.audio.master.AudioEngineResult.Success<*>)
             check(ctl.current.trackById("t1")!!.clips.size == 2)
 
             val json = AudioProjectSerializer().serialize(ctl.current)

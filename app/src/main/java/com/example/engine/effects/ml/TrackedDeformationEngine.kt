@@ -7,7 +7,7 @@ import com.google.mlkit.vision.face.FaceContour
 import com.google.mlkit.vision.face.FaceDetection
 import com.google.mlkit.vision.face.FaceDetectorOptions
 import com.google.mlkit.vision.pose.PoseLandmark
-import com.google.mlkit.vision.pose.accurate.AccuratePoseDetectorOptions
+import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions
 import com.google.mlkit.vision.pose.PoseDetection
 import kotlin.math.exp
 import kotlin.math.max
@@ -59,8 +59,8 @@ class TrackedDeformationEngine {
   )
 
   private val poseDetector = PoseDetection.getClient(
-    AccuratePoseDetectorOptions.Builder()
-      .setDetectorMode(AccuratePoseDetectorOptions.STREAM_MODE)
+    PoseDetectorOptions.Builder()
+      .setDetectorMode(PoseDetectorOptions.STREAM_MODE)
       .build()
   )
 

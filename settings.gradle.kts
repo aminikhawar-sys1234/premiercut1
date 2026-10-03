@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "AH Video Studio"
+rootProject.name = "Premier Cut"
 
 include(":app")

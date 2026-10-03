@@ -45,6 +45,7 @@ data class AudioClipModel(
     val metadata: AudioMetadata = AudioMetadata(),
 ) {
     init { require(timelineDurationSec >= 0.0 && sourceDurationSec >= 0.0) }
+    val speed: Float get() = transform.speed
     val timelineEndSec: Double get() = timelineStartSec + timelineDurationSec
     val sourceEndSec: Double get() = sourceStartSec + sourceDurationSec
     fun containsTime(t: Double): Boolean = t >= timelineStartSec && t < timelineEndSec

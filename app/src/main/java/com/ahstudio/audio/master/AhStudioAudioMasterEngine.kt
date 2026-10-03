@@ -45,7 +45,7 @@ class AhStudioAudioMasterEngine(
 
     init {
         cache.sourceProvider = { id -> project.sourceById(id) }
-        timeline.addListener { p -> project = p; mixer.setProject(p, format) }
+        timeline.addListener { p: MasterAudioProject -> project = p; mixer.setProject(p, format) }
         AudioEngineRegistry.install(this)
         state = AudioEngineState.READY
     }

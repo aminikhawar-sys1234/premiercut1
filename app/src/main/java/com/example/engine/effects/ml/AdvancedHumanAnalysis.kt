@@ -10,7 +10,7 @@ import com.google.mlkit.vision.facemesh.FaceMeshDetectorOptions
 import com.google.mlkit.vision.pose.Pose
 import com.google.mlkit.vision.pose.PoseDetection
 import com.google.mlkit.vision.pose.PoseLandmark
-import com.google.mlkit.vision.pose.accurate.AccuratePoseDetectorOptions
+import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions
 import com.google.mlkit.vision.segmentation.subject.SubjectSegmentation
 import com.google.mlkit.vision.segmentation.subject.SubjectSegmenter
 import com.google.mlkit.vision.segmentation.subject.SubjectSegmenterOptions
@@ -74,8 +74,8 @@ class AdvancedHumanAnalysis : AutoCloseable {
   private val poseDetector by lazy {
     runCatching {
       PoseDetection.getClient(
-        AccuratePoseDetectorOptions.Builder()
-          .setDetectorMode(AccuratePoseDetectorOptions.STREAM_MODE)
+        PoseDetectorOptions.Builder()
+          .setDetectorMode(PoseDetectorOptions.STREAM_MODE)
           .build()
       )
     }.getOrNull()

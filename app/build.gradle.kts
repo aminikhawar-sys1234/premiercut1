@@ -2,7 +2,7 @@ plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.kotlin.compose)
   alias(libs.plugins.google.devtools.ksp)
-  alias(libs.plugins.roborazzi)
+  // alias(libs.plugins.roborazzi)
   alias(libs.plugins.secrets)
   kotlin("plugin.serialization") version "2.2.10"
 }
@@ -125,7 +125,7 @@ dependencies {
   implementation("com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1")
   implementation(libs.coil.compose)
   implementation(libs.converter.moshi)
-  implementation(libs.firebase.ai)
+  // implementation(libs.firebase.ai)
   implementation(libs.firebase.firestore)
   implementation(libs.firebase.storage)
 
@@ -135,8 +135,8 @@ dependencies {
   implementation(libs.androidx.credentials.play.services)
   implementation(libs.googleid)
   implementation(libs.androidx.datastore.preferences)
-  implementation(libs.firebase.appcheck.recaptcha)
-  implementation(libs.firebase.appcheck.debug)
+  // implementation(libs.firebase.appcheck.recaptcha)
+  // implementation(libs.firebase.appcheck.debug)
   implementation(libs.kotlinx.coroutines.android)
   implementation(libs.kotlinx.coroutines.core)
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.10.2")
