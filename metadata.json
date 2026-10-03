@@ -1,0 +1,6 @@
+{
+  "name": "Premier Cut",
+  "description": "Professional lightweight video editing studio with multi-track timeline, templates, creator tools, and video export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

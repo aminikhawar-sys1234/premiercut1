@@ -1,0 +1,35 @@
+# Built application files
+*.apk
+*.aar
+*.aab
+.build-outputs/
+
+# Java & Kotlin artifacts
+*.class
+*.dex
+
+# Generated build directories
+build/
+app/build/
+.gradle/
+.kotlin/
+.cxx/
+app/.cxx/
+bin/
+gen/
+out/
+
+# Android Studio / IDE
+.idea/
+.navigation/
+*.iml
+local.properties
+
+# Secrets
+.env
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+*.lnk
+*.log
